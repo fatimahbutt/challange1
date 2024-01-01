@@ -1,0 +1,90 @@
+body{
+    background:hsl(47, 88%, 63%);
+    margin: 0;
+    padding: 0;
+    font-family: 'open Sans' , sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Make the body take up the full viewport height */
+
+        .square {
+            width: 250px; /* Set the width of the square */
+            height: 350px; /* Set the height of the square */
+            background-color: #e6e9eb;
+            border-radius: 10%;
+            border-right: 9px solid black; /* Thick black border on the right */
+             border-bottom: 9px solid black; 
+             overflow: hidden; /* Ensure the image stays within the square */
+             display: flex;
+             justify-content: center; /* Center the image horizontally */
+        }
+        .square img {
+              width: 80%; /* Make the image take up the full width of the square */
+             height: 40%; /* Make the image take up the full height of the square */
+             border-radius: 10%;
+             object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+             margin-top: 20px;
+         }
+         .square button {
+            position: absolute;
+            bottom: 288px; /* Adjust the distance from the bottom */
+            left: 515px; 
+            padding: 3px 4px; /* Add padding to the button */
+            background-color:hsl(47, 89%, 50%); /* Button background color */
+            color: #080808; /* Text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            cursor: pointer; /* Change cursor on hover */
+        }
+        
+        .square button:hover {
+            background-color: #c0bd19; /* Change background color on hover */
+        }
+        .square h6 {
+            position: absolute;
+            bottom: 270px; /* Adjust the distance from the bottom */
+            left: 46.5%; /* Center the text horizontally */
+            transform: translateX(-50%); /* Adjust to center the text perfectly */
+            margin: 0; /* Remove default margin */
+        }
+        .square h1 {
+            position: absolute;
+            bottom: 240px; /* Adjust the distance from the bottom */
+            left: 44.3%; /* Center the text horizontally */
+            transform: translateX(-16%); /* Adjust to center the text perfectly */
+            margin: 0; /* Remove default margin */
+            font-size: medium;
+        }
+        .square p {
+            position: absolute;
+            bottom: 200px; /* Adjust the distance from the bottom */
+            left: 44.3%; /* Center the text horizontally */
+            transform: translateX(-16%); /* Adjust to center the text perfectly */
+            margin: 0; /* Remove default margin */
+            font-size: x-small;
+            color: #4b4a4a;
+        }
+        .square .icon-image {
+            width: 20px; /* Adjust the width of the WebP image as needed */
+            height: 20px; /* Maintain aspect ratio */
+            bottom: 300px; /* Adjust the distance from the bottom */
+            object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+            margin-top: 320px;
+            transform: translateX(-952%); /* Adjust to center the text perfectly */
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%; /* Adjust to vertically center the text */
+            left: 50%; /* Adjust to horizontally center the text */
+            bottom: 300px;
+            margin-top: 145px;
+            transform: translateX(-100%); /* Adjust to center the text perfectly */
+            color: rgb(5, 5, 5); /* Set the text color */
+            font-size: 12px; /* Set the font size */
+            font-weight: bold; /* Set the font weight */
+        }
+    
+}
